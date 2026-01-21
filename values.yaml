@@ -4,10 +4,10 @@ replicaCount: 1
 namespace: hisbook-front
 
 image:
-  name: jeniel/hisbook
-  tag: f3684a2-frontend
+  name: acemcbmis/hisbook-front
+  tag: a5e040a-prod
 
 host:
 #  name: hisbook.bata.local
-   name: front.192.168.254.160.nip.io
+   name: front.192.168.1.210.nip.io
 onPrem: true
