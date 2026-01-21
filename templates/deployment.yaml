@@ -16,7 +16,7 @@ spec:
         app: {{ .Values.appName }}
     spec:
       imagePullSecrets:
-         - name: {{ .Values.appName }}-secret
+        - name: {{ .Values.appName }}-secret
       containers:
         - image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
           name: {{ .Values.appName }}
@@ -25,9 +25,14 @@ spec:
           envFrom:
             - configMapRef:
                 name: {{ .Values.appName }}-config
-            - secretRef:
-                name: {{ .Values.appName }}-secret
-
+        #     volumeMounts:
+      #       - name: env-file
+      #         mountPath: /app/public/.env
+      #         subPath: .env
+      # volumes:
+      #   - name: env-file
+      #     configMap:
+      #       name: nextjs-config
 ---
 apiVersion: v1
 kind: Service
@@ -44,3 +49,4 @@ spec:
       name: {{ .Values.appName }}
   selector:
     app: {{ .Values.appName }}
+---

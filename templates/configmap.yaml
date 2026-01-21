@@ -4,7 +4,9 @@ metadata:
   name: {{ .Values.appName }}-config
   namespace: {{ .Values.namespace }}
 data:
-  TOKEN_NAME: "123124124124124124124"
-  QDRANT_URL: "https://qdrant.acemcbohol.dev"
-  QDRANT_TIMEOUT: "30000"
-  QDRANT_MAX_RETRIES: "3"
+  VITE_API_URL="http://localhost:3001/graphql"
+  VITE_API_UPLOADING_SERVICE="http://localhost:3002"
+  VITE_MINIO_BUCKET="demo"
+  VITE_N8N_CHAT_WEBHOOK="https://n8n.acemcbohol.ph/webhook/75cc266d-c92c-4ec6-b425-800ac12aa62e/chat"
+  VITE_NODE_ENV: "dev"
+  MODE: "production"
