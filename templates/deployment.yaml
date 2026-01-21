@@ -16,7 +16,7 @@ spec:
         app: {{ .Values.appName }}
     spec:
       imagePullSecrets:
-        - name: {{ .Values.appName }}-secret
+        - name: regcred
       containers:
         - image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
           name: {{ .Values.appName }}
