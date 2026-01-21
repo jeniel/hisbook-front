@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.appName }}-config
+  namespace: {{ .Values.namespace }}
+data:
+  TOKEN_NAME: "123124124124124124124"
+  QDRANT_URL: "https://qdrant.acemcbohol.dev"
+  QDRANT_TIMEOUT: "30000"
+  QDRANT_MAX_RETRIES: "3"

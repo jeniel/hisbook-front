@@ -1,0 +1,13 @@
+appName: hisbook-front
+replicaCount: 1
+
+namespace: hisbook-front
+
+image:
+  name: jeniel/hisbook
+  tag: f3684a2-prod
+
+host:
+  name: hisbook.bata.local
+
+onPrem: true
