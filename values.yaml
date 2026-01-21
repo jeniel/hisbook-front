@@ -8,6 +8,6 @@ image:
   tag: f3684a2-prod
 
 host:
-  name: hisbook.bata.local
-
+#  name: hisbook.bata.local
+   name: front.192.168.254.160.nip.io
 onPrem: true
