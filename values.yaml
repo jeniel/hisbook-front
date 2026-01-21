@@ -5,7 +5,7 @@ namespace: hisbook-front
 
 image:
   name: jeniel/hisbook
-  tag: f3684a2-prod
+  tag: f3684a2-frontend
 
 host:
 #  name: hisbook.bata.local
